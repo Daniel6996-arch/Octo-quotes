@@ -20,3 +20,10 @@
 .margin-left{
     margin-left: 16vw;
 }
+.article{
+    border: 2px solid yellow;
+}
+.basic{
+    display: flex;
+    flex-direction: row;
+}

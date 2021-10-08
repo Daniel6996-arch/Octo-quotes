@@ -4,9 +4,8 @@
         <p><span>Author: </span>Someone</p>
     </div>
     <div>
-    <div>
-    <button>See details</button>
-            <p><span>Votes</span></p>
+    <div [ngClass] = "'row-1'">
+        <p><span>Votes</span></p>
            <div>
             <div [ngClass] = "'row'">
                <div [ngClass] = "'row'">
@@ -21,7 +20,7 @@
             <span><button>Upvote</button> <button [ngClass] = "'margin-left'">Downvote</button></span>
            </div>
         </div>
-        <p>Timelapse</p>
+        <p><span>Posted: </span>Timelapsed</p>
     </div>
 </div>
 <button>Add a quote</button>

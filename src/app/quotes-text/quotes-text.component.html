@@ -1,31 +1,33 @@
-<div [ngClass] = "'article'">
-    <div>
-        <p><span>Quote: </span>As happy as I am</p>
-        <p><span>Author: </span>Someone</p>
-    </div>
-    <div>
-    <div [ngClass] = "'row-1'">
-        <p><span>Votes</span></p>
-           <div>
-            <div [ngClass] = "'row'">
-               <div [ngClass] = "'row'">
-                <span [ngClass] = "'upvote-box'">0</span>
-                <p>Upvotes</p>
-               </div>
-               <div [ngClass] = "'row'">
-                <span [ngClass] = "'downvote-box'">0</span>
-                <p>Downvotes</p>
+<div [ngClass] = "'center'">
+    <div [ngClass] = "'article'">
+        <div>
+            <p><span>Quote: </span>As happy as I am</p>
+            <p><span>Author: </span>Someone</p>
+        </div>
+        <div>
+        <div>
+            <p><span>Votes</span></p>
+               <div>
+                <div [ngClass] = "'row'">
+                   <div [ngClass] = "'row'">
+                    <span [ngClass] = "'upvote-box'">0</span>
+                    <p>Upvotes</p>
+                   </div>
+                   <div [ngClass] = "'row'">
+                    <span [ngClass] = "'downvote-box'">0</span>
+                    <p>Downvotes</p>
+                   </div>
+                </div>
+                <span><button>Upvote</button> <button [ngClass] = "'margin-left'">Downvote</button></span>
                </div>
             </div>
-            <span><button>Upvote</button> <button [ngClass] = "'margin-left'">Downvote</button></span>
-           </div>
+            <p><span>Posted: </span>Timelapsed</p>
         </div>
-        <p><span>Posted: </span>Timelapsed</p>
+        <div [ngClass] = "'justify-btn'">
+            <button>Prev</button>
+            <button>Next</button>
+        </div>   
     </div>
-    <div [ngClass] = "'justify-btn'">
-        <button>Prev</button>
-        <button>Next</button>
-    </div>   
 </div>
 <button>Add a quote</button>
 <app-quotes-form></app-quotes-form>

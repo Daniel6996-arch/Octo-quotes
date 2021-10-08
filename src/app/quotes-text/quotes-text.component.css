@@ -22,17 +22,15 @@
 }
 .article{
     border: 2px solid yellow;
-    width: 60vw;
 }
 .basic{
-    display: flex;
-    flex-direction: row;
-}
-.row-1{
     display: flex;
     flex-direction: row;
 }
 .justify-btn{
     display: flex;
     justify-content: space-evenly;
+}
+.center{
+    text-align: center;
 }

@@ -1,6 +1,7 @@
-.margin-top{
+.header{
     margin-top: 5vw;
     margin-bottom: 5vw;
+    text-align: center;
 }
 .italics{
     font-style: italic;

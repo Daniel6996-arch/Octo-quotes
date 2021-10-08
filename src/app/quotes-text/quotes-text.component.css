@@ -1,15 +1,22 @@
 .row{
     display: flex;
     flex-direction: row;
-}
-.margin-left{
-    margin-left: 10vw;
+    align-items: center;
 }
 .upvote-box{
     border: 1px solid black;
-    margin-left: 2vw;
+    margin-left: 0vw;
+    width: 5vw;
+}
+.downvote-box{
+    border: 1px solid black;
+    margin-left: 10vw;
+    width: 5vw;
 }
 .col{
     display: flex;
     flex-direction: column;
+}
+.margin-left{
+    margin-left: 16vw;
 }

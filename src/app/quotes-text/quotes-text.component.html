@@ -1,0 +1,20 @@
+<div>
+    <p><span>Quote: </span>As happy as I am</p>
+    <button>See details</button>
+    <div>
+        <p><span>Author: </span>Someone</p>
+        <div>
+            <p><span>Votes</span></p>
+           <div>
+            <div [ngClass] = "'row'">
+                <p>Upvotes<span [ngClass] = "'upvote-box'">0</span></p>
+                <p [ngClass] = "'margin-left'">Downvotes<span [ngClass] = "'upvote-box'">0</span></p>
+            </div>
+            <span><button>Upvote</button> <button [ngClass] = "'margin-left'">Downvote</button></span>
+           </div>
+        </div>
+        <p>Timelapse</p>
+    </div>
+</div>
+<button>Add a quote</button>
+<app-quotes-form></app-quotes-form>

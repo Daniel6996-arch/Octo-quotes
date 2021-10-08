@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.margin-left{
+    margin-left: 10vw;
+}
+.upvote-box{
+    border: 1px solid black;
+    margin-left: 2vw;
+}

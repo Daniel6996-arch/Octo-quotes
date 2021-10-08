@@ -7,8 +7,14 @@
             <p><span>Votes</span></p>
            <div>
             <div [ngClass] = "'row'">
-                <p>Upvotes<span [ngClass] = "'upvote-box'">0</span></p>
-                <p [ngClass] = "'margin-left'">Downvotes<span [ngClass] = "'upvote-box'">0</span></p>
+               <div [ngClass] = "'col'">
+                <span [ngClass] = "'upvote-box'">0</span>
+                <p>Upvotes</p>
+               </div>
+               <div [ngClass] = "'col'">
+                <span [ngClass] = "'upvote-box'">0</span>
+                <p [ngClass] = "'margin-left'">Downvotes</p>
+               </div>
             </div>
             <span><button>Upvote</button> <button [ngClass] = "'margin-left'">Downvote</button></span>
            </div>

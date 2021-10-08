@@ -9,3 +9,7 @@
     border: 1px solid black;
     margin-left: 2vw;
 }
+.col{
+    display: flex;
+    flex-direction: column;
+}

@@ -35,8 +35,11 @@
     <hr>
     <ul>
       <li *ngFor='let quote of quotes' [ngClass] = "'border-around'" type="none">
-        <span [ngClass] = "'words'">Quote: </span>{{quote.Word}}
+        <div>
+        <p><span [ngClass] = "'words'">Quote: </span>{{quote.Word}}</p>    
         <p><span [ngClass] = "'words'">Author: </span>{{quote.Author}}</p>
+        <button [ngClass] = "'margin-left-1'">Details</button>
+        </div>
         <div [ngClass] = "'row'">
             <p><span [ngClass] = "'words'">Votes:</span></p>
             <p [ngClass] = "'margin-left-1'">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>

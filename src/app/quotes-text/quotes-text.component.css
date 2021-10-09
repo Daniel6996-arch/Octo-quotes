@@ -18,25 +18,14 @@
     flex-direction: column;
 }
 .margin-left{
-    margin-left: 12vw;
-}
-.article{
-    border: 2px solid yellow;
-}
-.basic{
-    display: flex;
-    flex-direction: row;
-}
-.justify-btn{
-    display: flex;
-    justify-content: space-evenly;
-}
-.center{
-    text-align: center;
+    margin-left: 7vw;
 }
 .words{
     font-weight: bolder;
 }
 .border-around{
     border: 1px solid black;
+}
+.margin-left-1{
+    margin-left: 3vw;
 }

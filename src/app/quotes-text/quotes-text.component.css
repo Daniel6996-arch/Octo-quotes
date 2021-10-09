@@ -37,3 +37,6 @@
 .words{
     font-weight: bolder;
 }
+.border-around{
+    border: 1px solid black;
+}

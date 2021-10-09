@@ -38,15 +38,15 @@
         <span [ngClass] = "'words'">Quote: </span>{{quote.Word}}
         <p><span [ngClass] = "'words'">Author: </span>{{quote.Author}}</p>
         <div [ngClass] = "'row'">
-            <p><span [ngClass] = "'words'">Votes</span></p>
-            <p>Upvotes: </p>
-            <p>Downvotes: </p>
+            <p><span [ngClass] = "'words'">Votes:</span></p>
+            <p>Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
+            <p [ngClass] = "'margin-left'">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
         </div>
         <p><span [ngClass] = "'words'">Posted: </span></p>
         <div [ngClass] = "'row'">
             <p><span [ngClass] = "'words'">Vote: </span></p>
             <button>Upvote</button>
-            <button>Downvote</button>
+            <button [ngClass] = "'margin-left'">Downvote</button>
         </div>
       </li>
     </ul>

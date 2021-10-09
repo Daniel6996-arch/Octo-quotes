@@ -15,7 +15,6 @@ export class QuotesTextComponent implements OnInit {
     {Word:'Everything is connected in this universe',Author:'Socrates',description:'Damn Math'},
     {Word:'Do not gain the world and loose your soul, wisdom is better than gold.',Author:'Bob Marley',description:'Cause I am an evil overlord'},
   ];
-
   constructor() { }
 
   ngOnInit(): void {

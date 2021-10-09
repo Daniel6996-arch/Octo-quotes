@@ -38,19 +38,20 @@
         <div>
         <p><span [ngClass] = "'words'">Quote: </span>{{quote.Word}}</p>    
         <p><span [ngClass] = "'words'">Author: </span>{{quote.Author}}</p>
-        <button [ngClass] = "'margin-left-1'">Details</button>
         </div>
-        <div [ngClass] = "'row'">
-            <p><span [ngClass] = "'words'">Votes:</span></p>
-            <p [ngClass] = "'margin-left-1'">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
-            <p [ngClass] = "'margin-left'">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
-        </div>
-        <p><span [ngClass] = "'words'">Posted: </span>1 minute ago</p>
-        <div [ngClass] = "'row'">
-            <p><span [ngClass] = "'words'">Vote: </span></p>
-            <button [ngClass] = "'margin-left-1'">Upvote</button>
-            <button [ngClass] = "'margin-left'">Downvote</button>
-        </div>
+       <div> 
+           <div [ngClass] = "'row'">
+        <p><span [ngClass] = "'words'">Votes:</span></p>
+        <p [ngClass] = "'margin-left-1'">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
+        <p [ngClass] = "'margin-left'">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
+    </div>
+    <p><span [ngClass] = "'words'">Posted: </span>1 minute ago</p>
+    <div [ngClass] = "'row'">
+        <p><span [ngClass] = "'words'">Vote: </span></p>
+        <button [ngClass] = "'margin-left-1'">Upvote</button>
+        <button [ngClass] = "'margin-left'">Downvote</button>
+     </div>
+    </div>
       </li>
     </ul>
     <button>Add a quote</button>

@@ -1,10 +1,10 @@
 <div> 
     <div [ngClass] = "'rowd'">
         <p><span [ngClass] = "'words'">Votes:</span></p>
-        <p [ngClass] = "'margin-left-1'" class="text-primary">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
-        <p [ngClass] = "'margin-left'" class="text-primary">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
+        <p [ngClass] = "'margin-left-1'" class="text-primary">Upvotes <span [ngClass] = "'upvote-box'">{{quote.Upvote}}</span></p>
+        <p [ngClass] = "'margin-left'" class="text-primary">Downvotes <span [ngClass] = "'downvote-box'">{{quote.Downvote}}</span></p>
     </div>
-        <p><span [ngClass] = "'words'">Posted: </span>1 minute ago</p>
+        <p><span [ngClass] = "'words'">Posted: </span>{{quote.completeDate}}</p>
     <div [ngClass] = "'rowd'">
         <p><span [ngClass] = "'words'">Vote: </span></p>
         <button [ngClass] = "'margin-left-1'" class="btn btn-success">Upvote</button>

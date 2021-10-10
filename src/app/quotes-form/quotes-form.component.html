@@ -1,10 +1,13 @@
-<form [ngClass] = "'col'" class="container">
-    <label>Enter Your Quote</label>
-    <textarea cols="20" rows="5"></textarea>
-    <label>Author</label>
-    <input type="text" placeholder="Author">
-    <label>Contributer's Name</label>
-    <input type="text" placeholder="Name">
-    <label>Sender's Email</label>
-    <input type="email" placeholder="Email">
-</form>
+<div [ngClass] = "'background'">
+    <h1 class="text-center">Contribute to our quotes.</h1>
+    <form [ngClass] = "'col'" class="container">
+        <label></label>
+        <textarea [ngClass] = "'margin-bottom'" required class="form-control" id="description" rows="4" placeholder="Enter Your Quote"></textarea>
+        <label></label>
+        <input [ngClass] = "'margin-bottom'" type="text" placeholder="Author" required class="form-control" id="author">
+        <label></label>
+        <input [ngClass] = "'margin-bottom'" type="text" placeholder="Contributer's Name" required class="form-control" id="name">
+        <label></label>
+        <input type="email" placeholder="Email" required class="form-control" id="email">
+    </form>
+</div>

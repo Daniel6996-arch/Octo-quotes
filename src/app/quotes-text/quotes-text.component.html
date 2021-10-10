@@ -1,35 +1,3 @@
-<!--<div [ngClass] = "'center'">
-    <div [ngClass] = "'article'">
-        <div>
-            <p><span [ngClass] = "'words'">Quote: </span>As happy as I am</p>
-            <p><span [ngClass] = "'words'">Author: </span>Someone</p>
-        </div>
-        <div>
-        <div>
-            <p><span [ngClass] = "'words'">Votes</span></p>
-               <div>
-                <div [ngClass] = "'row'">
-                   <div [ngClass] = "'row'">
-                    <span [ngClass] = "'upvote-box'">0</span>
-                    <p>Upvotes</p>
-                   </div>
-                   <div [ngClass] = "'row'">
-                    <span [ngClass] = "'downvote-box'">0</span>
-                    <p>Downvotes</p>
-                   </div>
-                </div>
-                <span><button>Upvote</button> <button [ngClass] = "'margin-left'">Downvote</button></span>
-               </div>
-            </div>
-            <p><span [ngClass] = "'words'">Posted: </span>Timelapsed</p>
-        </div>
-        <div [ngClass] = "'justify-btn'">
-            <button>Prev Quote</button>
-            <button>Next Quote</button>
-        </div>   
-    </div>
-</div>
-<button>Add a quote</button>-->
 
 <div>
     <hr>
@@ -44,5 +12,5 @@
     </li>
     </ul>
   </div>
-  <button class="btn btn-primary" [ngClass] = "'btn'">Add a quote</button>
-  <app-quotes-form></app-quotes-form>
+  <button class="btn btn-primary" [ngClass] = "'btn'" (click)='toggleDetails()'>Add a quote</button>
+  <app-quotes-form *ngIf='quote.showForm'></app-quotes-form>

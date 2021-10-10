@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
+  toggleDetails(){
+    this.quotes[index].showForm = !this.quotes[index].showForm;
+   }
 
   constructor() { }
 

@@ -34,14 +34,15 @@
 <div>
     <hr>
     <ul>
-      <li *ngFor='let quote of quotes' [ngClass] = "'border-around'" type="none">
+      <li *ngFor='let quote of quotes;let i = index' [ngClass] = "'border-around'" type="none">
     <div>
         <p><span [ngClass] = "'words'">Quote: </span>{{quote.Word}}</p>    
         <p><span [ngClass] = "'words'">Author: </span>{{quote.Author}}</p>
-        <button class="btn btn-primary" [ngClass] = "'btn-height'">Details</button>
+        <button class="btn btn-primary" [ngClass] = "'btn-height'"(click)='toggleDetails(i)'>Details</button>
     </div>
+    <app-quote-details *ngIf='quote.showDescription' [quote]='quote'></app-quote-details>
     </li>
     </ul>
   </div>
-  <app-quote-details></app-quote-details>
+  <button class="btn btn-primary" [ngClass] = "'btn'">Add a quote</button>
   <app-quotes-form></app-quotes-form>

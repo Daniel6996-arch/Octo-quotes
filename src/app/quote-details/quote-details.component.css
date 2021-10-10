@@ -1,0 +1,40 @@
+.rowd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.upvote-box{
+    border: 1px solid black;
+    margin-left: 0vw;
+    width: 5vw;
+    color: black;
+}
+.downvote-box{
+    border: 1px solid black;
+    margin-left: 0vw;
+    width: 5vw;
+    color: black;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.margin-left{
+    margin-left: 7vw;
+}
+.words{
+    font-weight: bolder;
+}
+.border-around{
+    border: 1px solid black;
+}
+.margin-left-1{
+    margin-left: 3vw;
+}
+.btn{
+    margin-left: 3vw;
+    padding: 0vh 1vw 0vh 1vw;
+}
+.btn-height{
+    padding: 0vh 1vw 0vh 1vw;
+}

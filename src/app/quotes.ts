@@ -3,7 +3,7 @@ export class Quote {
      Author: string=" ";
      description: string=" ";  */
      showDescription: boolean;
-    constructor(public Word: string,public Author : string,public description: any){
+    constructor(public Word: string,public Author : string,){
       this.showDescription=false;
     }
  }

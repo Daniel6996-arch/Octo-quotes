@@ -40,16 +40,16 @@
         <p><span [ngClass] = "'words'">Author: </span>{{quote.Author}}</p>
         </div>
        <div> 
-           <div [ngClass] = "'row'">
+           <div [ngClass] = "'rowd'">
         <p><span [ngClass] = "'words'">Votes:</span></p>
-        <p [ngClass] = "'margin-left-1'">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
-        <p [ngClass] = "'margin-left'">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
+        <p [ngClass] = "'margin-left-1'" class="text-primary">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
+        <p [ngClass] = "'margin-left'" class="text-primary">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
     </div>
     <p><span [ngClass] = "'words'">Posted: </span>1 minute ago</p>
-    <div [ngClass] = "'row'">
+    <div [ngClass] = "'rowd'">
         <p><span [ngClass] = "'words'">Vote: </span></p>
-        <button [ngClass] = "'margin-left-1'">Upvote</button>
-        <button [ngClass] = "'margin-left'">Downvote</button>
+        <button [ngClass] = "'margin-left-1'" class="btn btn-success">Upvote</button>
+        <button [ngClass] = "'margin-left'" class="btn btn-success">Downvote</button>
      </div>
     </div>
       </li>

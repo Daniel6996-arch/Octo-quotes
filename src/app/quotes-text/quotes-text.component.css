@@ -1,4 +1,4 @@
-.row{
+.rowd{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,11 +7,13 @@
     border: 1px solid black;
     margin-left: 0vw;
     width: 5vw;
+    color: black;
 }
 .downvote-box{
     border: 1px solid black;
     margin-left: 0vw;
     width: 5vw;
+    color: black;
 }
 .col{
     display: flex;

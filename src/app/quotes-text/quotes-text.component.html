@@ -35,25 +35,13 @@
     <hr>
     <ul>
       <li *ngFor='let quote of quotes' [ngClass] = "'border-around'" type="none">
-        <div>
+    <div>
         <p><span [ngClass] = "'words'">Quote: </span>{{quote.Word}}</p>    
         <p><span [ngClass] = "'words'">Author: </span>{{quote.Author}}</p>
-        </div>
-       <div> 
-           <div [ngClass] = "'rowd'">
-        <p><span [ngClass] = "'words'">Votes:</span></p>
-        <p [ngClass] = "'margin-left-1'" class="text-primary">Upvotes <span [ngClass] = "'upvote-box'">0</span></p>
-        <p [ngClass] = "'margin-left'" class="text-primary">Downvotes <span [ngClass] = "'downvote-box'">0</span></p>
+        <button class="btn btn-primary" [ngClass] = "'btn-height'">Details</button>
     </div>
-    <p><span [ngClass] = "'words'">Posted: </span>1 minute ago</p>
-    <div [ngClass] = "'rowd'">
-        <p><span [ngClass] = "'words'">Vote: </span></p>
-        <button [ngClass] = "'margin-left-1'" class="btn btn-success">Upvote</button>
-        <button [ngClass] = "'margin-left'" class="btn btn-success">Downvote</button>
-     </div>
-    </div>
-      </li>
+    </li>
     </ul>
-    <button class="btn btn-primary" [ngClass] = "'btn'">Add a quote</button>
   </div>
+  <app-quote-details></app-quote-details>
   <app-quotes-form></app-quotes-form>
